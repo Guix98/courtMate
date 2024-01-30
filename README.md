@@ -1,16 +1,15 @@
-# court_mate
+# Welcome to CourtMate!
 
-A new Flutter project.
+CourtMate is an app that helps you to make and manage tennis court reservations, this was a part of a technical assessment to apply to a Flutter dev Role.
 
-## Getting Started
+## Clean Architecture
 
-This project is a starting point for a Flutter application.
+It's my first time implementing DDD Clean Architecture with Flutter, so improvements will come in the future
 
-A few resources to get you started if this is your first Flutter project:
+## Hive
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+I've chose Hive as DB because of it's simplicity.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Open weather API
+
+I'm using Open weather free API to access current forecast, if you clone this repo, make sure yo have an access token: [You can create an account here](https://openweathermap.org/api)
