@@ -1,1 +1,43 @@
-{}
+{
+    "appTitle": "CourtMate",
+    "nextReservation": "Próxima reserva: ",
+    "newReservation": "Nueva Reserva",
+    "deleteConfirmation": "¿Estás seguro de eliminar la reserva de {name}, cancha \"{court}\" en {date}?",
+    "court": "Cancha",
+    "username": "Nombre del usuario: ",
+    "date:": "Fecha",
+    "hour": "Hora",
+    "add": "Agregar",
+    "selectCourt": "Seleccione una cancha",
+    "validatorNameEmpty":"El nombre no puede estar vacío",
+    "validatorNameLength":"El nombre debe ser de al menos 2 caracteres",
+    "upcomingReservations": "Próximas reservaciones: ",
+    "clouds": "Nubes:\n{probability}%",
+    "onlyThree": "Solo tres reservaciones diarias por cancha permitidas",
+
+
+    "@deleteConfirmation": {
+     "placeholders": {
+         "name" : {
+             "type": "String",
+             "example": "Archie"
+         },
+         "court" : {
+             "type": "String",
+             "example": "A"
+         },
+         "date" : {
+             "type": "String",
+             "example": "Mar-10"
+         }
+     }
+    },
+    "@clouds": {
+     "placeholders": {
+         "probability" : {
+             "type": "String",
+             "example": "100"
+         }
+     }
+    }
+ }

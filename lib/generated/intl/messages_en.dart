@@ -20,6 +20,32 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(probability) => "Clouds:\n${probability}%";
+
+  static String m1(name, court, date) =>
+      "Are you sure to delete ${name}\'s reservation, court \"${court}\" at ${date}?";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add": MessageLookupByLibrary.simpleMessage("Add"),
+        "appTitle": MessageLookupByLibrary.simpleMessage("CourtMate"),
+        "clouds": m0,
+        "court": MessageLookupByLibrary.simpleMessage("Court"),
+        "deleteConfirmation": m1,
+        "hour": MessageLookupByLibrary.simpleMessage("Hour"),
+        "newReservation":
+            MessageLookupByLibrary.simpleMessage("New Reservation"),
+        "nextReservation":
+            MessageLookupByLibrary.simpleMessage("Next reservation: "),
+        "onlyThree": MessageLookupByLibrary.simpleMessage(
+            "Only three reservations per day for each court permited"),
+        "selectCourt": MessageLookupByLibrary.simpleMessage("Select a court"),
+        "upcomingReservations":
+            MessageLookupByLibrary.simpleMessage("Upcoming reservations: "),
+        "username": MessageLookupByLibrary.simpleMessage("Username: "),
+        "validatorNameEmpty":
+            MessageLookupByLibrary.simpleMessage("Name can not be empty"),
+        "validatorNameLength": MessageLookupByLibrary.simpleMessage(
+            "Name must be at least 2 characters")
+      };
 }

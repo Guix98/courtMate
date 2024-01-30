@@ -34,7 +34,7 @@ final deleteReservationProvider = Provider<DeleteReservation>((ref) {
   return DeleteReservation(repository: respository);
 });
 
-final tripListNotifierProvider =
+final reservationsListNotifierProvider =
     StateNotifierProvider<RerservationListNotifier, List<Reservation>>((ref) {
   final getReservations = ref.read(getReservationsProvider);
   final addReservation = ref.read(addReservationProvider);
@@ -54,7 +54,9 @@ class RerservationListNotifier extends StateNotifier<List<Reservation>> {
       : super([]);
 
   Future<void> getAllReservations() async {
-    await _getReservations();
+    final reservations = await _getReservations();
+    reservations.fold(
+        (error) => state = [], (reservations) => state = reservations);
   }
 
   Future<void> addNewReservation(Reservation reservation) async {

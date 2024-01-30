@@ -4,7 +4,7 @@ class DeleteReservation {
   final ReservationRespository repository;
 
   DeleteReservation({required this.repository});
-  Future<void> call(int index) {
-    return repository.deleteReservation(index);
+  Future<void> call(int id) {
+    return repository.deleteReservation(id);
   }
 }

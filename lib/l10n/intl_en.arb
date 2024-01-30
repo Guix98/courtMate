@@ -1,1 +1,43 @@
-{}
+{
+   "appTitle": "CourtMate",
+   "nextReservation": "Next reservation: ",
+   "newReservation": "New Reservation",
+   "deleteConfirmation": "Are you sure to delete {name}'s reservation, court \"{court}\" at {date}?",
+   "court": "Court",
+   "username": "Username: ",
+   "date:": "Date",
+   "hour": "Hour",
+   "add": "Add",
+   "selectCourt": "Select a court",
+   "validatorNameEmpty":"Name can not be empty",
+   "validatorNameLength":"Name must be at least 2 characters",
+   "upcomingReservations": "Upcoming reservations: ",
+   "clouds": "Clouds:\n{probability}%",
+   "onlyThree": "Only three reservations per day for each court permited",
+
+
+   "@deleteConfirmation": {
+    "placeholders": {
+        "name" : {
+            "type": "String",
+            "example": "Archie"
+        },
+        "court" : {
+            "type": "String",
+            "example": "A"
+        },
+        "date" : {
+            "type": "String",
+            "example": "Mar-10"
+        }
+    }
+   },
+   "@clouds": {
+    "placeholders": {
+        "probability" : {
+            "type": "String",
+            "example": "100"
+        }
+    }
+   }
+}
